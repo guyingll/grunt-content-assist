@@ -72,5 +72,11 @@ grunt.initConfig({
 ```
 
 ## Release History
-0.2.0  remove java commonds,rewrite transform codes removew shell.js plugin,use jquery 1.8.3
-0.1.2  call shell to use java to transform jsduck docs to eclipse content assist files
+####0.2.0  
+
+ 1. remove java commonds,rewrite transform codes 
+ 2. remove shell.js plugin  
+ 3. use jquery 1.8.3 plugin 
+ 
+####0.1.2  
+ 1.  call shell to use JsAuto.jar to transform jsduck docs to eclipse content assist files
