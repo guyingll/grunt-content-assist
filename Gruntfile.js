@@ -29,12 +29,13 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     content_assist: {
-      default_options: {
         options: {
-            inputdir:'inputdir',
-            outputdir:'builds'
+            namespace:'iAuto'
+        },
+        files: {
+            src: ['./test/*.js'],
+            dest: 'tmp'
         }
-      }
     }
 
   });

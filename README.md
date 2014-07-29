@@ -25,45 +25,52 @@ In your project's Gruntfile, add a section named `content_assist` to the data ob
 ```js
 grunt.initConfig({
   content_assist: {
-    default_options: {
-        options: {
-            inputdir:'test',
-            outputdir:'gogo'
-        }
-    }
+      options: {
+          namespace:'iAuto'
+      },
+      files: {
+          src: ['./test/*.js'],
+          dest: 'builds'
+      }
   },
 });
 ```
 
 ### Options
 
-#### options.inputdir
+#### options.namespace
 Type: `String`
 
-A string value is the path of the jsduck output.
+The namespace of js frameworks 
 
-#### options.outputdir
+### Files
+
+#### files.src
 Type: `String`
 
-A string value is the path you want to ouput.
+A string value is the file which is the jsduck output.
+
+#### files.dest
+Type: `String`
+
+A string value is the path your want to output the result.
 
 ### Usage Examples
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
 
 ```js
 grunt.initConfig({
   content_assist: {
-	default_options: {
-        options: {
-            inputdir:'docsOutput',
-            outputdir:'assist'
-        }
-    }
+      options: {
+          namespace:'iAuto'
+      },
+      files: {
+          src: ['./test/*.js'],
+          dest: 'builds'
+      }
   },
 });
 ```
 
 ## Release History
-_(Nothing yet)_
+0.2.0  remove java commonds,rewrite transform codes removew shell.js plugin,use jquery 1.8.3
+0.1.2  call shell to use java to transform jsduck docs to eclipse content assist files
