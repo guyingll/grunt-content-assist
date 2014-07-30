@@ -26,7 +26,7 @@ In your project's Gruntfile, add a section named `content_assist` to the data ob
 grunt.initConfig({
   content_assist: {
       options: {
-          namespace:'iAuto'
+          namespace:'MyApp'
       },
       files: {
           src: ['./test/*.js'],
@@ -61,7 +61,7 @@ A string value is the path your want to output the result.
 grunt.initConfig({
   content_assist: {
       options: {
-          namespace:'iAuto'
+          namespace:'MyApp'
       },
       files: {
           src: ['./test/*.js'],
@@ -72,6 +72,19 @@ grunt.initConfig({
 ```
 
 ## Release History
+
+####0.2.2 
+  
+ 1. remove all keywords
+
+####0.2.2 
+  
+ 1. remove global file
+
+####0.2.1 
+  
+ 1. remove tmp and test file
+
 ####0.2.0  
 
  1. remove java commonds,rewrite transform codes 

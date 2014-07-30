@@ -30,7 +30,7 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     content_assist: {
         options: {
-            namespace:'iAuto'
+            namespace:'MyApp'
         },
         files: {
             src: ['./test/*.js'],

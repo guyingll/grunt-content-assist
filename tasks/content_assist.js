@@ -24,11 +24,6 @@ module.exports = function(grunt) {
     var options = this.options({
       namespace:""
     });
-    // var tools=options.pathexpand+"JsAuto.jar";
-    // var cmd="java -jar "+tools+" iAuto "+options.inputdir+" "+options.outputdir;
-    // var success = shell.exec(cmd, {silent:true}).code === 0?"success":"faild";
-    // grunt.log.writeln('File "' + options.outputdir + '" created '+success);
-    // Iterate over all specified file groups.
 
     function dom2property(elem){
         var property={},title=elem.find(".title");

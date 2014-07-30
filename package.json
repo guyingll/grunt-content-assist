@@ -1,7 +1,7 @@
 {
   "name": "grunt-content-assist",
   "description": "content assist",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "homepage": "https://github.com/guyingll/grunt-content-assist",
   "author": {
     "name": "yanpeng",
